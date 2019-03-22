@@ -1,4 +1,4 @@
-# Setup Node Package with Typescript
+# Setup Node Package with TypeScript
 
 ## Step 1 - initialize your package
 
@@ -17,4 +17,10 @@ Then create a `.gitignore` file, with a single line to start with:
 
 ```
 node_modules/
+```
+
+## Step 2 - install TypeScript
+
+```
+npm i -D typescript
 ```

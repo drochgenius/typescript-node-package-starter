@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/drochgenius/typescript-node-package-starter/issues"
   },
-  "homepage": "https://github.com/drochgenius/typescript-node-package-starter#readme"
+  "homepage": "https://github.com/drochgenius/typescript-node-package-starter#readme",
+  "devDependencies": {
+    "typescript": "^3.3.4000"
+  }
 }
