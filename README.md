@@ -24,3 +24,51 @@ node_modules/
 ```
 npm i -D typescript
 ```
+
+## Step 3 - initialize your source directory
+
+The source directory will contain your package source code written with TypeScript.
+
+```bash
+mkdir src
+cd src
+```
+
+* Initialize your `tsconfig.json` file. 
+
+```
+npx typescript --init
+```
+
+* And edit the `tsconfig.json`.
+
+```javascript
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "commonjs",
+        "declaration": true,
+        "sourceMap": true,
+        "outDir": "../dist",
+        "rootDir": "./",
+        "moduleResolution": "node",
+        "baseUrl": "./"
+    }
+}
+```
+
+* Add a file `src/index.ts` with some basic Typescript code.
+
+* Add a `build` script to your `package.json`: 
+
+```javascript
+  "scripts": {
+    "build": "tsc -p src",
+  },
+```
+
+* Run the script to test compilation:
+
+```
+npm run build
+```
