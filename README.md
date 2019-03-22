@@ -79,6 +79,8 @@ This should have create a `dist/` directory with you compiled `.js` code along w
 
 ## Step 4 - prepare your code for publishing
 
+* Make sure you are setup to publish on [HMH NPM Registry](https://github.com/hmhco/uie-wg/blob/master/arb/npm-registry.md).
+
 Edit the `package.json`.
 
 * Setup the `main` and `types` entry points for your module:
@@ -102,3 +104,4 @@ Edit the `package.json`.
 ```bash
 touch .npmignore
 ```
+
