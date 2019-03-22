@@ -72,3 +72,7 @@ npx typescript --init
 ```
 npm run build
 ```
+
+This should have create a `dist/` directory with you compiled `.js` code along with type definition `.d.ts` files and sourcemaps.
+
+* Add `dist/` to your `.gitignore` so it's not tracked by version control.

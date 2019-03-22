@@ -4,7 +4,7 @@
   "description": "How to setup a Node package with Typescript",
   "main": "index.js",
   "scripts": {
-    "build": "tsc -p src",
+    "build": "tsc -p src"
   },
   "repository": {
     "type": "git",
