@@ -21,7 +21,7 @@ node_modules/
 
 ## Step 2 - install TypeScript
 
-```
+```bash
 npm i -D typescript
 ```
 
@@ -76,3 +76,29 @@ npm run build
 This should have create a `dist/` directory with you compiled `.js` code along with type definition `.d.ts` files and sourcemaps.
 
 * Add `dist/` to your `.gitignore` so it's not tracked by version control.
+
+## Step 4 - prepare your code for publishing
+
+Edit the `package.json`.
+
+* Setup the `main` and `types` entry points for your module:
+
+```javascript
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+```
+
+* Add a `prepublishOnly` npm script to make sure our code gets compiled prior to publishing.
+
+```javascript
+  "scripts": {
+    "build": "tsc -p src",
+    "prepublishOnly": "npm run build"
+  },
+```
+
+* Create an empty `.npmignore` to make sure you `dist/` files will be published even if they are ignore from source control.
+
+```bash
+touch .npmignore
+```

@@ -2,9 +2,11 @@
   "name": "@hmh/typescript-node-package-starter",
   "version": "0.1.0",
   "description": "How to setup a Node package with Typescript",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc -p src"
+    "build": "tsc -p src",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
