@@ -107,7 +107,12 @@ touch .npmignore
 
 ## Step 5 - publish your package
 
-```
+```bash
 npm publish
 ```
 
+Confirm that your package have been published:
+
+```bash
+npm show @hmh/typescript-node-package-starter
+```
