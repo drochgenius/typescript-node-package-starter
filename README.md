@@ -105,3 +105,9 @@ Edit the `package.json`.
 touch .npmignore
 ```
 
+## Step 5 - publish your package
+
+```
+npm publish
+```
+
