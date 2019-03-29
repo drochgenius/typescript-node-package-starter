@@ -1,26 +1,26 @@
 {
-  "name": "@hmh/typescript-node-package-starter",
-  "version": "0.1.2",
-  "description": "How to setup a Node package with Typescript",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsc -p src",
-    "watch": "tsc -p src -w",
-    "prepublishOnly": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/drochgenius/typescript-node-package-starter.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/drochgenius/typescript-node-package-starter/issues"
-  },
-  "homepage": "https://github.com/drochgenius/typescript-node-package-starter#readme",
-  "devDependencies": {
-    "typescript": "^3.3.4000"
-  }
+    "name": "@hmh/typescript-node-package-starter",
+    "version": "0.1.2",
+    "description": "How to setup a Node package with Typescript",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc -p src",
+        "watch": "tsc -p src -w",
+        "prepublishOnly": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/drochgenius/typescript-node-package-starter.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/drochgenius/typescript-node-package-starter/issues"
+    },
+    "homepage": "https://github.com/drochgenius/typescript-node-package-starter#readme",
+    "devDependencies": {
+        "typescript": "latest"
+    }
 }
