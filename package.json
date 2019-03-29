@@ -6,6 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -p src",
+    "watch": "tsc -p src -w",
     "prepublishOnly": "npm run build"
   },
   "repository": {

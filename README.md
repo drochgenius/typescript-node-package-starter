@@ -1,5 +1,38 @@
 # Setup Node Package with TypeScript
 
+This repository demonstrate how to setup a Node project with Typescript, and how to publish the code as an NPM package on HMH private NPM registry.
+
+## What is TypeScript
+
+* You don't need to learn another programming language: TypeScript is a superset of JavaScript, it's just JS + static type safety.
+* Typescript catches type-related bugs in your IDE, and at compilation time.
+* TypeScript compiles to readable, standards-based JavaScript. 
+
+## Why should I use it?
+
+* Improve the quality of your JavaScript codebases.
+* Like Babel, it lets you write you code with ESnext syntax compiled to the target you want: ES5, ES6, ESnext.
+* Provides Enhanced IntelliSense in Visual Studio Code
+* Gives you refactoring superpowers.
+* Helps you enforce contracts by sharing type definitions between the client and the server.
+
+For more details and full documentation, see the [TypeScript website](https://www.typescriptlang.org/).
+
+## TL;DR;
+
+* All source code in `src/` folder.
+* `src/` must contain a `tsconfig.json` file.
+* Compile to `dist/` folder.
+* You need an empty `.npmignore` file, to make sure both `src` and `dist` files are distributed over NPM.
+* In your `package.json`:
+  * Make sure your module name is prefixed by `@hmh/` scope.
+  * Add `main` that points to you module's generated `.js` entry point.
+  * Add `types` to point to your module's generated type definitions `.d.ts` file.
+  * Add a `build` script to compile your source: `tsc -p src`.
+  * Add a `watch` script to compile your source: `tsc -p src -w`.
+  * Add a `prepublishOnly` script to auto-compile your source on publish.
+
+
 ## Step 1 - initialize your package
 
 ```bash
