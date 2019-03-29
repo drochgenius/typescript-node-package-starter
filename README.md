@@ -20,18 +20,18 @@ For more details and full documentation, see the [TypeScript website](https://ww
 
 ## TL;DR;
 
--   All source code in `src/` folder.
 -   Install TypeScript: `npm i -D typescript`.
--   `src/` must contain a `tsconfig.json` file.
+-   Write source code in `src/` folder.
+    -   `src/` must contain a `tsconfig.json` file.
 -   Compile to `dist/` folder.
--   You need an empty `.npmignore` file, to make sure both `src` and `dist` files are distributed over NPM.
+-   Add empty `.npmignore` file to distribute `src` + `dist`.
 -   In your `package.json`:
-    -   Make sure your module name is prefixed by `@hmh/` scope.
-    -   Add `main` that points to you module's generated `.js` entry point.
-    -   Add `types` to point to your module's generated type definitions `.d.ts` file.
-    -   Add a `build` script to compile your source: `tsc -p src`.
-    -   Add a `watch` script to compile your source: `tsc -p src -w`.
-    -   Add a `prepublishOnly` script to auto-compile your source on publish.
+    -   `name` prefixed with `@hmh/`.
+    -   `main`: generated `.js` entry point.
+    -   `types`: generated type definitions `.d.ts`.
+    -   `build` script: `tsc -p src`.
+    -   `watch` script: `tsc -p src -w`.
+    -   `prepublishOnly` script to compile on publish.
 
 ## Step 1 - initialize your package
 
