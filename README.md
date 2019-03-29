@@ -32,6 +32,7 @@ For more details and full documentation, see the [TypeScript website](https://ww
     -   `build` script: `tsc -p src`.
     -   `watch` script: `tsc -p src -w`.
     -   `prepublishOnly` script to compile on publish.
+-   Install missing type definitions for external dependencies: `npm i -D @types/<package-name>`.
 
 ## Step 1 - initialize your package
 
