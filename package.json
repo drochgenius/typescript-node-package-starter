@@ -1,6 +1,6 @@
 {
     "name": "@hmh/typescript-node-package-starter",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "How to setup a Node package with Typescript",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
