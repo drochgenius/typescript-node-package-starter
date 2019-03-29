@@ -47,12 +47,11 @@ npx typescript --init
     "compilerOptions": {
         "target": "esnext",
         "module": "commonjs",
+        "moduleResolution": "node",
         "declaration": true,
         "sourceMap": true,
         "outDir": "../dist",
-        "rootDir": "./",
-        "moduleResolution": "node",
-        "baseUrl": "./"
+        "rootDir": "./"
     }
 }
 ```

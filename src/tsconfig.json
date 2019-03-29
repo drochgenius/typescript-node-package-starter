@@ -1,13 +1,11 @@
 {
-  "compilerOptions": {
-      "target": "esnext",
-      "module": "commonjs",
-      "declaration": true,
-      "sourceMap": true,
-      "outDir": "../dist",
-      "rootDir": "./",
-      "strict": true,
-      "moduleResolution": "node",
-      "baseUrl": "./"
-  }
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "declaration": true,
+        "sourceMap": true,
+        "outDir": "../dist",
+        "rootDir": "./"
+    }
 }
