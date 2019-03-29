@@ -21,6 +21,7 @@
     },
     "homepage": "https://github.com/drochgenius/typescript-node-package-starter#readme",
     "devDependencies": {
+        "@types/node": "^11.12.0",
         "typescript": "latest"
     }
 }

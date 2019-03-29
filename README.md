@@ -147,3 +147,11 @@ Confirm that your package have been published:
 ```bash
 npm show @hmh/typescript-node-package-starter
 ```
+
+## Step 6 - add external type definitions
+
+When you project have dependencies, you must provide type definitions for them.
+
+* Today, popular packages ship with their own type definitions: this means there nothing to do.
+* If the package you want does not provide its own definitions, chances are they are available as standalone definitions you can install separately: `npm install @type/<dependency-name>`.
+* If none of the above is available, you can simply tell TypeScript to ignore by providing the following stub definition: `declare module "<dependency-name>"`;
