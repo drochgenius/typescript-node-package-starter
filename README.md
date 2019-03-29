@@ -4,17 +4,17 @@ This repository demonstrate how to setup a Node project with Typescript, and how
 
 ## What is TypeScript
 
--   You don't need to learn another programming language: TypeScript is a superset of JavaScript, it's just JS + static type safety.
+-   Not another language: JavaScript + Static type checking.
 -   Typescript catches type-related bugs in your IDE, and at compilation time.
 -   TypeScript compiles to readable, standards-based JavaScript.
 
 ## Why should I use it?
 
--   Improve the quality of your JavaScript codebases.
--   Like Babel, it lets you write you code with ESnext syntax compiled to the target you want: ES5, ES6, ESnext.
+-   Improve the quality of your JavaScript codebases
+-   Replaces Babel
 -   Provides Enhanced IntelliSense in Visual Studio Code
--   Gives you refactoring superpowers.
--   Helps you enforce contracts by sharing type definitions between the client and the server.
+-   Gives you refactoring superpowers
+-   Helps you enforce contracts by sharing type definitions between the client and the server
 
 For more details and full documentation, see the [TypeScript website](https://www.typescriptlang.org/).
 
@@ -33,6 +33,9 @@ For more details and full documentation, see the [TypeScript website](https://ww
     -   `watch` script: `tsc -p src -w`.
     -   `prepublishOnly` script to compile on publish.
 -   Install missing type definitions for external dependencies: `npm i -D @types/<package-name>`.
+
+Join **[#typescript](https://hmhco.slack.com/messages/CHG9T3Q8P)** channel on HMHCO slack if you have further questions or need help with TypeScript.
+
 
 ## Step 1 - initialize your package
 

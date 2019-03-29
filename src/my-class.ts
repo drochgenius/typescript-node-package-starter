@@ -1,5 +1,10 @@
 import { EventEmitter } from 'events';
 
+export interface Position {
+    x: number;
+    y: number;
+}
+
 export class MyClass extends EventEmitter {
     public title: string = 'TypeScript is awesome!';
     private posX: number = 0;
@@ -11,7 +16,7 @@ export class MyClass extends EventEmitter {
         this.posY = y;
     }
 
-    public getCoordinates(): number[] {
-        return [this.posX, this.posY];
+    public getCoordinates(): Position {
+        return { x: this.posX, y: this.posY };
     }
 }
