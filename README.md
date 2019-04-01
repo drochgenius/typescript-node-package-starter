@@ -24,11 +24,12 @@ For more details and full documentation, see the [TypeScript website](https://ww
 -   Write source code in `src/` folder.
     -   `src/` must contain a `tsconfig.json` file.
 -   Compile to `dist/` folder.
--   Add empty `.npmignore` file to distribute `src` + `dist`.
+-   
 -   In your `package.json`:
     -   `name` prefixed with `@hmh/`.
     -   `main`: generated `.js` entry point.
     -   `types`: generated type definitions `.d.ts`.
+    -   `files`: add `src` and `dist` files.
     -   `build` script: `tsc -p src`.
     -   `watch` script: `tsc -p src -w`.
     -   `prepublishOnly` script to compile on publish.
@@ -134,10 +135,13 @@ Edit the `package.json`.
   },
 ```
 
--   Create an empty `.npmignore` to make sure you `dist/` files will be published even if they are ignore from source control.
+-   Add `files` whitelist to your `package.json` to make sure all files in both `src/` and `dist/` are distributed with you package.
 
-```bash
-touch .npmignore
+```javascript
+    "files": [
+        "src/**/*",
+        "dist/**/*"
+    ],
 ```
 
 ## Step 5 - publish your package
