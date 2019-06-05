@@ -24,7 +24,7 @@ For more details and full documentation, see the [TypeScript website](https://ww
 -   Write source code in `src/` folder.
     -   `src/` must contain a `tsconfig.json` file.
 -   Compile to `dist/` folder.
--   
+-
 -   In your `package.json`:
     -   `name` prefixed with `@hmh/`.
     -   `main`: generated `.js` entry point.
@@ -163,3 +163,6 @@ When you project have dependencies, you must provide type definitions for them.
 * Today, popular packages ship with their own type definitions: this means there nothing to do.
 * If the package you want does not provide its own definitions, chances are they are available as standalone definitions you can install separately: `npm install @type/<dependency-name>`.
 * If none of the above is available, you can simply tell TypeScript to ignore by providing the following stub definition: `declare module "<dependency-name>"`;
+
+
+Trying out theia with GitPod
