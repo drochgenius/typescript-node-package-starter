@@ -10,6 +10,7 @@
     ],
     "scripts": {
         "build": "tsc -p src",
+        "lint": "prettier 'src/**/*.ts' --write; eslint 'src/**/*.ts' --fix",
         "watch": "tsc -p src -w",
         "prepublishOnly": "npm run build"
     },
@@ -26,6 +27,19 @@
     "homepage": "https://github.com/drochgenius/typescript-node-package-starter#readme",
     "devDependencies": {
         "@types/node": "latest",
+        "@typescript-eslint/eslint-plugin": "^1.11.0",
+        "@typescript-eslint/parser": "^1.11.0",
+        "eslint": "^6.0.1",
+        "prettier": "^1.18.2",
         "typescript": "latest"
+    },
+    "eslintConfig": {
+        "parser": "@typescript-eslint/parser",
+        "plugins": [
+            "@typescript-eslint"
+        ],
+        "extends": [
+            "plugin:@typescript-eslint/recommended"
+        ]
     }
 }

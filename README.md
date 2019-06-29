@@ -34,6 +34,7 @@ For more details and full documentation, see the [TypeScript website](https://ww
     -   `watch` script: `tsc -p src -w`.
     -   `prepublishOnly` script to compile on publish.
 -   Install missing type definitions for external dependencies: `npm i -D @types/<package-name>`.
+- Configure [ESLint](https://javascriptplayground.com/typescript-eslint/) and [Prettier](https://prettier.io/).
 
 Join **[#typescript](https://hmhco.slack.com/messages/CHG9T3Q8P)** channel on HMHCO slack if you have further questions or need help with TypeScript.
 
@@ -163,3 +164,8 @@ When you project have dependencies, you must provide type definitions for them.
 * Today, popular packages ship with their own type definitions: this means there nothing to do.
 * If the package you want does not provide its own definitions, chances are they are available as standalone definitions you can install separately: `npm install @type/<dependency-name>`.
 * If none of the above is available, you can simply tell TypeScript to ignore by providing the following stub definition: `declare module "<dependency-name>"`;
+
+## Step 7 - configure linter and formatter
+
+* The following [article](https://javascriptplayground.com/typescript-eslint/) walks you through the steps to configure ESLint. I like to put my ESLint configuration in the `package.json` file.
+* You can also add [Prettier](https://prettier.io/) by installing the dependency. See Prettier documentation for details as it's not specific to TypeScript.
